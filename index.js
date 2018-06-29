@@ -8,7 +8,7 @@ require('bootstrap-slider');
 require('bootstrap-toggle');
 var layerSwitcher = require('./lib/ol3-layerswitcher.js');
 
-var ol = require('openlayers');
+var ol = require('ol');
 var baseLayers = require('./lib/addBaseLayers.js');
 //var addChartLayers = require('./lib/addLayers.js');
 var drawFeatures = require('./lib/drawFeatures.js');
@@ -196,7 +196,7 @@ $("#offline").bootstrapToggle({
 		toggleOffline();
 	});
 
-	
+
 $.ajax({
 	url: "/signalk",
 	dataType: "json",
@@ -270,7 +270,7 @@ $.ajax({
          sparkArray.length = localStorage.getItem("sparklinePoints");
 //         sparkDepthOptions;
 
-         
+
 
             var tackAngle = 45;
             var areasCloseHaul = [
@@ -279,7 +279,7 @@ $.ajax({
             var areasCloseHaulTrue = [
                steelseries.Section((360 - tackAngle), 0, 'rgba(0, 0, 220, 0.3)'),
                steelseries.Section(0, tackAngle, 'rgba(0, 0, 220, 0.3)')];
-           
+
             windDir = new steelseries.MarineWindDirection('canvasWind', {
                lcdTitleStrings: ['Apparent', 'True'],
                useColorLabels: true,
@@ -425,7 +425,7 @@ $.ajax({
                drawNormalOnTop: 'true',
                normalRangeColor: 'rgba(255, 0, 0, 1.0)'
             };
-            
+
             console.log("init executed");
 
 

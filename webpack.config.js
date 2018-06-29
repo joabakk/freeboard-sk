@@ -5,8 +5,8 @@ module.exports = {
   entry: './index.js',
   target: 'node', // in order to ignore built-in modules like path, fs, etc.
   externals: [nodeExternals()],
-  //path: __dirname,
   output: {
+    path: __dirname,
     filename: 'bundle.js'
   }
 };

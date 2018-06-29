@@ -8,5 +8,5 @@ module.exports = {
   //path: __dirname,
   output: {
     filename: 'bundle.js'
-  },
+  }
 };
